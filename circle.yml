@@ -1,7 +1,7 @@
 general:
   branches:
     only:
-      - master
+      - middleman
 
 machine:
   ruby:
@@ -13,7 +13,7 @@ test:
 
 deployment:
   production:
-    branch: master
+    branch: middleman
     commands:
       - git config --global user.name "circleci"
       - git config --global user.email "furugomu@gmail.com"
