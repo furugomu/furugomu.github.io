@@ -1,0 +1,20 @@
+general:
+  branches:
+    only:
+      - master
+
+machine:
+  ruby:
+    version: 2.3.0
+
+test:
+  override:
+    - 'true'
+
+deployment:
+  production:
+    branch: master
+    commands:
+      - git config --global user.name "circleci"
+      - git config --global user.email "furugomu@gmail.com"
+      - bundle exec middleman deploy -e production
