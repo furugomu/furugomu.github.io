@@ -16,6 +16,9 @@ page '/*.txt', layout: false
 # proxy "/this-page-has-no-template.html", "/template-file.html", locals: {
 #  which_fake_page: "Rendering a fake page with a local variable" }
 
+config[:markdown_engine] = :redcarpet
+config[:markdown] = {fenced_code_blocks: true}
+
 ###
 # Helpers
 ###
