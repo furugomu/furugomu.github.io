@@ -1,5 +1,6 @@
 ---
 title: 第16回 VS B-A-T-T-L-I-V-E-!! おつかれさまでした
+date: 2016-03-19
 tags: t7s
 ---
 
