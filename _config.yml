@@ -14,7 +14,7 @@ timezone: Asia/Tokyo
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: https://furugomu.github.io
-root: /nikki/
+root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 
@@ -80,8 +80,8 @@ theme: landscape
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@github.com:furugomu/nikki.git
-  branch: gh-pages
+  repo: git@github.com:furugomu/furugomu.github.io.git
+  branch: master
   message: "[ci skip] Site updated: {{ now('YYYY-MM-DD HH:mm:ss') }}"
   name: furugomu
   email: furugomu@gmail.com
