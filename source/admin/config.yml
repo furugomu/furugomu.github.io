@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: furugomu/furugomu.github.io
-  branch: master
+  branch: hexo
 publish_mode: editorial_workflow
 media_folder: source/images/uploads
 public_folder: /images/uploads
