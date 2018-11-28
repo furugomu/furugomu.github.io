@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: furugomu/nikki
+  repo: furugomu/furugomu.github.io
   branch: master
 publish_mode: editorial_workflow
 media_folder: source/images/uploads
