@@ -1,0 +1,49 @@
+---
+import p48 from "./48.png";
+import p11 from "./11.png";
+import p02 from "./02.png";
+import p06 from "./06.png";
+import p52 from "./52.png";
+import p27 from "./27.png";
+import p21 from "./21.png";
+import p04 from "./04.png";
+import p50 from "./50.png";
+import p42 from "./42.png";
+import p15 from "./15.png";
+import p22 from "./22.png";
+import p55 from "./55.png";
+import p31 from "./31.png";
+import p33 from "./33.png";
+import p46 from "./46.png";
+import p28 from "./28.png";
+import p09 from "./09.png";
+import p40 from "./40.png";
+import p18 from "./18.png";
+import p34 from "./34.png";
+import p16 from "./16.png";
+import p12 from "./12.png";
+import p39 from "./39.png";
+import p44 from "./44.png";
+const images = [
+  [p48, p11, p02, p06, p52],
+  [p27, p21, p04, p50, p42],
+  [p15, p22, p55, p31, p33],
+  [p46, p28, p09, p40, p18],
+  [p34, p16, p12, p39, p44],
+];
+---
+
+{
+  images.map((row, i) => (
+    <div class="row">
+      {row.map((image, j) => (
+        <img src={image} />
+      ))}
+    </div>
+  ))
+}
+<style>
+  img {
+    outline: solid 1px gold;
+  }
+</style>
