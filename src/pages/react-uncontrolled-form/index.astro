@@ -1,0 +1,13 @@
+---
+import { Form } from "./Form";
+import SiteLayout from "../../layouts/SiteLayout.astro";
+---
+
+<SiteLayout title="フォーム">
+  <h1>フォーム</h1>
+  <p>uncontrolled component だけでフォームをアレするにはどうやるの？</p>
+  <h2>きほん</h2>
+  <Form client:visible />
+  <h2>zod</h2>
+  <p>まだない</p>
+</SiteLayout>
