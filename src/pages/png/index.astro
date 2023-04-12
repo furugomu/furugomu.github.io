@@ -1,0 +1,9 @@
+---
+import SiteLayout from "../../layouts/SiteLayout.astro";
+import { PngParser } from "./PngParser";
+---
+
+<SiteLayout title="PNG ファイルを JS で読む">
+  <h1>PNG ファイルを JS で読むんだ</h1>
+  <PngParser client:visible />
+</SiteLayout>
