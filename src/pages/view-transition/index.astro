@@ -1,0 +1,36 @@
+---
+import SiteLayout from "../../layouts/SiteLayout.astro";
+import { ViewTransition } from "./ViewTransition";
+---
+
+<SiteLayout title="View Transition API">
+  <h1>ワオオアー</h1>
+  <ViewTransition client:visible />
+</SiteLayout>
+
+<style>
+  @keyframes slide-to-left {
+    from {
+      left: 0%;
+    }
+    to {
+      left: -100%;
+    }
+  }
+
+  @keyframes slide-from-right {
+    from {
+      left: 100%;
+    }
+    to {
+      left: 0%;
+    }
+  }
+  ::view-transition-old(root) {
+    animation-name: slide-to-left;
+  }
+
+  ::view-transition-new(root) {
+    animation-name: slide-from-right;
+  }
+</style>
