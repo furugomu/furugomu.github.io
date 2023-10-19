@@ -1,6 +1,6 @@
 ---
 title: Understand
-layout: ../../layouts/Layout.astro
+layout: ../../layouts/SiteLayout.astro
 ---
 
 # Understand
