@@ -1,6 +1,5 @@
 ---
 import SiteLayout from "../../layouts/SiteLayout.astro";
-import { Image } from 'astro:assets';
 import p48 from "./_assets/48.png";
 import p11 from "./_assets/11.png";
 import p02 from "./_assets/02.png";
@@ -34,12 +33,13 @@ const images = [
   [p34, p16, p12, p39, p44],
 ];
 ---
+
 <SiteLayout title="Tunic">
   {
     images.map((row, i) => (
       <div class="row">
         {row.map((image, j) => (
-          <Image src={image} alt="map" />
+          <img src={image.src} alt="map" />
         ))}
       </div>
     ))
