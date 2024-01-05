@@ -1,4 +1,4 @@
-import { DragEventHandler, useState } from "react";
+import { type DragEventHandler, useState } from "react";
 
 export const PngParser = () => {
   const [chunks, setChunks] = useState<Chunk[]>([]);

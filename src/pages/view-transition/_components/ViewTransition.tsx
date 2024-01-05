@@ -24,7 +24,7 @@ declare module "react" {
 type Item = {
   id: string;
   name: string;
-  imageUrl: string;
+  imageUrl: ImageMetadata;
 };
 
 const items = [
@@ -88,7 +88,7 @@ export const ViewTransition = () => {
           .filter((x) => x !== item)
           .map((item) => (
             <button
-              key={item.imageUrl}
+              key={item.id}
               style={{
                 border: "none",
                 background: "none",

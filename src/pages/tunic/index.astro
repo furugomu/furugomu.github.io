@@ -1,31 +1,31 @@
 ---
 import SiteLayout from "../../layouts/SiteLayout.astro";
-
-import p48 from "./48.png";
-import p11 from "./11.png";
-import p02 from "./02.png";
-import p06 from "./06.png";
-import p52 from "./52.png";
-import p27 from "./27.png";
-import p21 from "./21.png";
-import p04 from "./04.png";
-import p50 from "./50.png";
-import p42 from "./42.png";
-import p15 from "./15.png";
-import p22 from "./22.png";
-import p55 from "./55.png";
-import p31 from "./31.png";
-import p33 from "./33.png";
-import p46 from "./46.png";
-import p28 from "./28.png";
-import p09 from "./09.png";
-import p40 from "./40.png";
-import p18 from "./18.png";
-import p34 from "./34.png";
-import p16 from "./16.png";
-import p12 from "./12.png";
-import p39 from "./39.png";
-import p44 from "./44.png";
+import { Image } from 'astro:assets';
+import p48 from "./_assets/48.png";
+import p11 from "./_assets/11.png";
+import p02 from "./_assets/02.png";
+import p06 from "./_assets/06.png";
+import p52 from "./_assets/52.png";
+import p27 from "./_assets/27.png";
+import p21 from "./_assets/21.png";
+import p04 from "./_assets/04.png";
+import p50 from "./_assets/50.png";
+import p42 from "./_assets/42.png";
+import p15 from "./_assets/15.png";
+import p22 from "./_assets/22.png";
+import p55 from "./_assets/55.png";
+import p31 from "./_assets/31.png";
+import p33 from "./_assets/33.png";
+import p46 from "./_assets/46.png";
+import p28 from "./_assets/28.png";
+import p09 from "./_assets/09.png";
+import p40 from "./_assets/40.png";
+import p18 from "./_assets/18.png";
+import p34 from "./_assets/34.png";
+import p16 from "./_assets/16.png";
+import p12 from "./_assets/12.png";
+import p39 from "./_assets/39.png";
+import p44 from "./_assets/44.png";
 const images = [
   [p48, p11, p02, p06, p52],
   [p27, p21, p04, p50, p42],
@@ -39,7 +39,7 @@ const images = [
     images.map((row, i) => (
       <div class="row">
         {row.map((image, j) => (
-          <img src={image} />
+          <Image src={image} alt="map" />
         ))}
       </div>
     ))
