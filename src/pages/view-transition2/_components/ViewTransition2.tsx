@@ -1,4 +1,4 @@
-import { FormEventHandler, useState } from "react";
+import { type FormEventHandler, useState } from "react";
 
 export const ViewTransition2 = () => {
   const [myColors, setMyColors] = useState(colors);

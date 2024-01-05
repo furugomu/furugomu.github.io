@@ -1,4 +1,4 @@
-import { FormEventHandler, useState } from "react";
+import { type FormEventHandler, useState } from "react";
 
 export const Form = () => {
   const [output, setOutput] = useState("submitした内容がここに出る");
