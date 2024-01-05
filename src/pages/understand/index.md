@@ -1,11 +1,13 @@
 ---
 title: Understand
-layout: ../../layouts/Layout.astro
+layout: ../../layouts/SiteLayout.astro
 ---
 
 # Understand
 
 [Steam: Understand](https://store.steampowered.com/app/1299400/Understand/)
+
+[1](#1) [2](#2) [3](#3) [4](#4) [5](#5) [6](#6) [7](#7) [8](#8) [9](#9) [0](#0) [\_](#_) [-](#-)
 
 ## 1
 
@@ -449,6 +451,8 @@ n 未満には無い。
 ### 0-10
 
 盤面で点対称な位置に曲がり角がある。
+
+<a name=_></a>
 
 ## ` `
 
