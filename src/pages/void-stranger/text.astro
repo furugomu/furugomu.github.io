@@ -1,0 +1,10 @@
+---
+import SiteLayout from "../../layouts/SiteLayout.astro";
+import { VoidText, VoidTextTable } from "./_Text";
+---
+
+<SiteLayout title="Void Strangerの文字">
+  <h1>Void Strangerの文字</h1>
+  <VoidText client:visible text="UNKO" />
+  <VoidTextTable client:visible />
+</SiteLayout>
