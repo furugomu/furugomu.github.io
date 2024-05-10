@@ -62,6 +62,8 @@ const Letter = ({ letter, size = "16px" }: LetterProps) => {
   // 文字
   const xy = (x: number, y: number) => (y * 2 + 1) * w + (x * 2 + 1);
   pixels[xy(0, 0)] = 3;
+  pixels[xy(1, 0)] = 1;
+  pixels[xy(2, 0)] = 1;
   pixels[xy(1, 2)] = code & 1 ? 3 : 1;
   pixels[xy(2, 2)] = code & 2 ? 3 : 1;
   pixels[xy(0, 2)] = code & 4 ? 3 : 1;

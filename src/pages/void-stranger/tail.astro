@@ -1,0 +1,48 @@
+---
+import SiteLayout from "../../layouts/SiteLayout.astro";
+import b031 from "./_assets/b031.png";
+import b032 from "./_assets/b032.png";
+import b035 from "./_assets/b035.png";
+import b036 from "./_assets/b036.png";
+import b037 from "./_assets/b037.png";
+import b038 from "./_assets/b038.png";
+import b042 from "./_assets/b042.png";
+import b044 from "./_assets/b044.png";
+import b045 from "./_assets/b045.png";
+import b046 from "./_assets/b046.png";
+import b047 from "./_assets/b047.png";
+import b048 from "./_assets/b048.png";
+import b049 from "./_assets/b049.png";
+const images = [
+  [b036, b031],
+  [null, b037, b038],
+  [b045],
+  [b032, b046],
+  [null, null, b048, b044],
+  [b049, b042, b035],
+  [null, b047],
+];
+---
+
+<SiteLayout title="Void Stranger - しっぽ">
+  <h1>しっぽ</h1>
+  <table>
+    <tbody>
+      {
+        images.map((row) => (
+          <tr>
+            {row.map((image) => (
+              <td>
+                {image == null ? (
+                  " "
+                ) : (
+                  <img src={image.src} alt={image.src} height="192" />
+                )}
+              </td>
+            ))}
+          </tr>
+        ))
+      }
+    </tbody>
+  </table>
+</SiteLayout>
