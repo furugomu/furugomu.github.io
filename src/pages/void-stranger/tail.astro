@@ -14,13 +14,16 @@ import b047 from "./_assets/b047.png";
 import b048 from "./_assets/b048.png";
 import b049 from "./_assets/b049.png";
 const images = [
-  [b036, b031],
-  [null, b037, b038],
-  [b045],
-  [b032, b046],
+  [b037, b038],
+  [null],
   [null, null, b048, b044],
   [b049, b042, b035],
   [null, b047],
+  [null],
+  [b045],
+  [b032, b046],
+  [null],
+  [b036, b031],
 ];
 ---
 
@@ -34,7 +37,7 @@ const images = [
             {row.map((image) => (
               <td>
                 {image == null ? (
-                  " "
+                  <div style="height: 64px" />
                 ) : (
                   <img src={image.src} alt={image.src} height="192" />
                 )}
@@ -46,3 +49,16 @@ const images = [
     </tbody>
   </table>
 </SiteLayout>
+
+<style>
+  table {
+    border-spacing: 0;
+  }
+  td {
+    padding: 0;
+    margin: 0;
+    border: none;
+    line-height: 0;
+    min-height: 70px;
+  }
+</style>
