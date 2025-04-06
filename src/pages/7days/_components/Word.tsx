@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { Fragment, useState } from "react";
 import {
   CharA,
   CharB,
@@ -88,9 +88,9 @@ export function Word() {
   const [word, setWord] = useState("hello");
   const dominant = useCaesar(word);
   const foreign = useCaesar(word);
-  const foreigntChars = [...foreign.cipher2].map((char) => {
+  const foreigntChars = [...foreign.cipher2].map((char, i) => {
     const lowerChar = char.toLowerCase();
-    return FOREIGN_CHARS[lowerChar] ?? null;
+    return <Fragment key={i}>{FOREIGN_CHARS[lowerChar] ?? null}</Fragment>;
   });
   return (
     <div>
@@ -104,16 +104,28 @@ export function Word() {
         />
       </p>
       <p style={{ display: "flex", gap: "0.2rem" }}>
-        <button onClick={dominant.unshift}>←</button>
-        <button onClick={dominant.reset}>x</button>
-        <button onClick={dominant.shift}>→</button>
+        <button className="btn" onClick={dominant.unshift}>
+          ←
+        </button>
+        <button className="btn" onClick={dominant.reset}>
+          x
+        </button>
+        <button className="btn" onClick={dominant.shift}>
+          →
+        </button>
         <span style={{ fontSize: "1.4rem" }}>{dominant.cipher2}</span>(
         {dominant.rotation})
       </p>
       <p style={{ display: "flex", gap: "0.2rem" }}>
-        <button onClick={foreign.unshift}>←</button>
-        <button onClick={foreign.reset}>x</button>
-        <button onClick={foreign.shift}>→</button>
+        <button className="btn" onClick={foreign.unshift}>
+          ←
+        </button>
+        <button className="btn" onClick={foreign.reset}>
+          x
+        </button>
+        <button className="btn" onClick={foreign.shift}>
+          →
+        </button>
         {foreigntChars}
       </p>
     </div>
