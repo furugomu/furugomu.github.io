@@ -35,18 +35,16 @@ const images = [
 ---
 
 <SiteLayout title="Tunic">
-  {
-    images.map((row, i) => (
-      <div class="row">
-        {row.map((image, j) => (
-          <img src={image.src} alt="map" />
-        ))}
-      </div>
-    ))
-  }
+  <main class="container mx-auto flex flex-col gap-4 py-4">
+    <h1 class="text-4xl">Tunic</h1>
+    <div class="grid grid-cols-5 gap-0 w-fit">
+      {
+        images.flatMap((row, i) =>
+          row.map((image, j) => (
+            <img class="outline-1" src={image.src} alt="map" />
+          ))
+        )
+      }
+    </div>
+  </main>
 </SiteLayout>
-<style>
-  img {
-    outline: solid 1px gold;
-  }
-</style>

@@ -93,9 +93,10 @@ export function Word() {
     return <Fragment key={i}>{FOREIGN_CHARS[lowerChar] ?? null}</Fragment>;
   });
   return (
-    <div>
+    <div className="flex flex-col gap-4">
       <p>
         <input
+          className="input"
           type="text"
           value={word}
           pattern="[a-z]*"
@@ -103,7 +104,7 @@ export function Word() {
           style={{ fontSize: "20px" }}
         />
       </p>
-      <p style={{ display: "flex", gap: "0.2rem" }}>
+      <p className="flex flex-row gap-2">
         <button className="btn" onClick={dominant.unshift}>
           ←
         </button>
@@ -116,7 +117,7 @@ export function Word() {
         <span style={{ fontSize: "1.4rem" }}>{dominant.cipher2}</span>(
         {dominant.rotation})
       </p>
-      <p style={{ display: "flex", gap: "0.2rem" }}>
+      <p className="flex flex-row gap-2">
         <button className="btn" onClick={foreign.unshift}>
           ←
         </button>
@@ -126,7 +127,7 @@ export function Word() {
         <button className="btn" onClick={foreign.shift}>
           →
         </button>
-        {foreigntChars}
+        <span className="bg-white flex gap-1 px-1">{foreigntChars}</span>
       </p>
     </div>
   );

@@ -5,7 +5,11 @@ import { Word } from "./_components/Word";
 ---
 
 <SiteLayout title="7 Days to End with You">
-  <h1>7 Days to End with You</h1>
-  <Characters client:visible />
-  <Word client:visible />
+  <main class="container mx-auto gap-4 flex flex-col py-4">
+    <h1 class="text-4xl">7 Days to End with You</h1>
+    <div class="bg-white p-1">
+      <Characters client:visible />
+    </div>
+    <Word client:visible />
+  </main>
 </SiteLayout>

@@ -3,13 +3,47 @@ import SiteLayout from "../layouts/SiteLayout.astro";
 ---
 
 <SiteLayout title="ふるごむ">
-  <main>
-    <h1>こんにちは</h1>
+  <main class="container mx-auto flex flex-col gap-4 py-4">
+    <h1 class="text-4xl">ふるごむ</h1>
 
-    <ul>
-      <li><a href="/understand">Understand</a></li>
-      <li><a href="/tunic">Tunic</a></li>
-      <li><a href="/7days">7 Days to End with You</a></li>
-    </ul>
+    <section class="flex flex-col gap-4">
+      <h2 class="text-2xl">作ったもの</h2>
+      <ul class="list">
+        <li class="list-row">
+          <a class="link" href="https://academy-calendar.furugomu.workers.dev/"
+            >アイカツアカデミーのカレンダー（非公式）</a
+          >
+        </li>
+        <li class="list-row">
+          <a class="link" href="https://fukuwarai-awp.pages.dev/">福笑い</a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="flex flex-col gap-4">
+      <h2 class="text-2xl">ゲームのメモ</h2>
+      <p>ネタバレなので見ないで。</p>
+      <ul class="list">
+        <li class="list-row">
+          <a class="link" href="/understand">Understand</a>
+        </li>
+        <li class="list-row"><a class="link" href="/tunic">Tunic</a></li>
+        <li class="list-row">
+          <a class="link" href="/7days">7 Days to End with You</a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="flex flex-col gap-4">
+      <h2 class="text-2xl">いろいろ</h2>
+      <ul class="list">
+        <li class="list-row">
+          <a href="https://github.com/furugomu">GitHub</a>
+        </li>
+        <li class="list-row">
+          <a href="https://x.com/furugomu">Twitter</a>
+        </li>
+      </ul>
+    </section>
   </main>
 </SiteLayout>
